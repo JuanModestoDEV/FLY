@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN - FLYVIAGENS</title>
+    <link rel="stylesheet" href="../../CSS/Login/login.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Mozilla+Headline:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+ 
+</head>
+<body>
+  <header>
+      <div class="navbar">
+        <img src="../../IMG/logo.png" alt="FLYLOGO" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="../../HTML/Home/home.html">Home</a></li>
+            <li><a href="../../HTML/Pacotes/pacotes.html">Pacotes</a></li>
+            <li><a href="../../HTML/Sobre Nós/sobrenós.html">Sobre Nós</a></li>
+            <li class="login">
+              <a href="../../HTML/Login/login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="formulario-login">
+  <h2>Login FlyViagens</h2>
+  <form action="../../HTML/Home/home.html" method="get">
+    <label for="usuario">E-mail ou Usuário</label>
+    <input type="text" id="usuario" name="usuario" placeholder="Digite seu e-mail ou usuário" required>
+
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+    <div class="opcoes">
+      <label><input type="checkbox" name="lembrar"> Lembrar-me</label>
+      <a href="#">Esqueceu a senha?</a>
+    </div>
+
+    <button type="submit">Entrar</button>
+    <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+  </form>
+</main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <img
+          src="../../IMG/logo.png"
+          alt="FlyViagens Logo"
+          class="footer-logo"
+        />
+        <p>&copy; 2025 FlyViagens. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+</body>
+</html>
