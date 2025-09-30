@@ -1,0 +1,205 @@
+* {
+  font-family: "Alan Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgb(5, 5, 133);
+  font-size: large;
+  padding: 0.5% 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* NavBar */
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: paleturquoise;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.6rem;
+  transition: 0.3s ease;
+}
+
+/* Animações padrão */
+.navbar li:not(.login) a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Botão Login */
+.login {
+  margin-left: 2rem;
+}
+
+.login a {
+  background-color: rgb(201, 201, 0);
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.login a:hover {
+  transform: scale(1.05);
+  background-color: rgb(170, 170, 0);
+}
+
+
+
+/* Conteudo */
+
+.titulo {
+  color: #0000ff;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 35px;
+}
+
+.subtitulo {
+  color: gray;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 20px;
+}
+
+/* Login */
+
+.formulario-login {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.formulario-login h2 {
+  color: rgb(5,5,133);
+  margin-bottom: 1.5rem;
+}
+
+.formulario-login label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.formulario-login input[type="text"],
+.formulario-login input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.formulario-login .opcoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.formulario-login button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: rgb(201,201,0);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.formulario-login button:hover {
+  background-color: rgb(170,170,0);
+}
+
+.formulario-login p {
+  margin-top: 1rem;
+}
+
+.formulario-login a {
+  color: rgb(5,5,133);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(5, 5, 133);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-family: "Alan Sans", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .login {
+    margin-left: 0;
+  }
+
+  .login a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
